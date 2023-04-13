@@ -9,14 +9,18 @@ document.querySelector("#search").onclick = () => {
 };
 
 var swiper = new Swiper(".product-row", {
-  slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 30,
+  centeredSlides:true,
+  autoplay:{
+    delay:9500,
+    disableOnInteraction:false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   breakpoints: {
-    640: {
+    0: {
       slidesPerView: 1,
     },
     768: {

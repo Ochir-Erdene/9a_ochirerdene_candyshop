@@ -238,6 +238,7 @@ section{
     padding: 2rem;
     gap: 1.5rem;
     border-radius: 3rem;
+    margin-right: 5rem;
 }
 
 .product .product-row .img img{

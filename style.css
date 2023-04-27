@@ -9,15 +9,31 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     outline: none;
     border: none;
+    text-transform: capitalize;
     text-decoration: none;
     transition: .2s linear;
 }
 
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    background-color: var(--brown);
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #222; 
+}
+
 html{
     font-size: 62.5%;
-    overflow: hidden;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -71,8 +87,53 @@ html{
     display: none;
 }
 
+.home{
+    padding: 14rem;
+    background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-dark-wood-grain-background-material-picture-image_1135073.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
 
+.home .slides-container .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    di splay: none;
+}
 
+.home .slides-container .slide .content{
+    flex: 1 1 40rem;
+    animation: fadeLeft .4s linear .4s backwards;
+}
+
+.home .slides-container .slide .content span{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.home .slides-container .slide .content h3{
+    font-size: 6rem;
+    color:#222;
+    padding: 5rem 0;
+}
+
+.home .slides-container .slide .img{
+    flex: 1 1 40rem;
+    margin: 3rem 0;
+}
+
+.home .slides-container .slide .img img{
+    width: 100%;
+    animation: fadeUp .4s linear;
+}
+
+.home .slides-container .slide.active{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+} 
 
 
 

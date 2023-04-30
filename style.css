@@ -37,6 +37,10 @@ html{
     scroll-behavior: smooth;
 }
 
+section{
+    padding: 3rem 9%;
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -87,9 +91,23 @@ html{
     display: none;
 }
 
+@keyframes fadeLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+}
+
+@keyframes fadeup{
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
 .home{
-    padding: 14rem;
-    background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-dark-wood-grain-background-material-picture-image_1135073.jpg);
+    padding-top: 14rem;
+    background-image: url(https://wallpapercave.com/wp/wp7919900.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -100,7 +118,11 @@ html{
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-    di splay: none;
+    display: none;
+}
+
+.home .slides-container .slide.active{
+    display: flex;
 }
 
 .home .slides-container .slide .content{
@@ -109,7 +131,7 @@ html{
 }
 
 .home .slides-container .slide .content span{
-    color: #fff;
+    color: #222;
     font-size: 2.5rem;
 }
 
@@ -136,7 +158,36 @@ html{
 } 
 
 
+.home #next-slide,
+.home #prev-slide{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: var(--brown);
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
 
+.home #next-slide:hover,
+.home #prev-slide:hover{
+    background-color: #222;
+    color: #fff;
+}
+
+.home #next-slide{
+    left: 2rem;
+    margin-left: 164.5vh;
+}
+
+.home #prev-slide{
+    left: 2rem;
+}
 
 
 
@@ -203,5 +254,8 @@ html{
 @media(max-width: 458px){
     html{
         font-size: 50%;
+    }
+    .home .slides-container .slide h3{
+        font-size: 4rem;
     }
 }

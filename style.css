@@ -4,6 +4,10 @@
     --brown: #833517;
 }
 
+body{
+    background: #a73d13;
+}
+
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -39,6 +43,46 @@ html{
 
 section{
     padding: 3rem 9%;
+}
+
+.heading{
+    margin-top: 200px;
+    background: url(https://media.istockphoto.com/id/1211962034/photo/slices-of-dark-and-milk-chocolate.jpg?s=170667a&w=0&k=20&c=NdQGrfhZ9-JpzvSjPIU0dt9pMDalTt2h3RRg7vjxwIE=) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+}
+
+.heading h1{
+    color: #fff;
+    font-size: 5.5rem;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    padding: 1.2rem 0;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 1);
+    color: #fff;
+}
+
+.title span{
+    color: #222;
+    padding-left: 2rem;
+}
+
+.title a{
+    margin-left: auto;
+    color: #222;
+    font-size: 2rem;
+}
+
+.title a:hover{
+    color: #fff;
 }
 
 .header{
@@ -202,25 +246,162 @@ section{
 
 .banner-container .banner img{
     object-fit: cover;
+    box-shadow: 0 0.5rem 1rem rgba(0.1, 0.2, 0.3, 0.8);
 }
 
 .banner-container .banner .content{
     position: absolute;
-    top: 45rem;
+    /* top: 50%; */
     left: 2rem;
     transform: translateY(-50%);
+    width: 155px;
+    height: 120px;
+    background-color: #222;
 }
 
 .banner-container .banner .content span{
+    margin-left: 10px;
     color: #fff;
     font-size: 1.5rem;
 }
 
 .banner-container .banner .content h3{
+    margin-left: 10px;
     font-size: 2rem;
     padding-top: .5rem;
+    color: #fff;
+}
+
+.banner-container .banner .content .btn{
+    padding: .8rem 2.5rem;
+    margin: 10px;
+}
+
+/* .banner-container .banner:hover img{
+    transform: scale(1.2);
+} */
+
+.category .box-contanier{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+    padding: 4rem 0;
+}
+
+.category .box-contanier .box{
+    text-align: center;
+}
+
+.category .box-contanier .box img{
+    height: 15rem;
+    width: 21rem;
+}
+
+.category .box-contanier .box h3{
+    font-size: 2rem;
+    margin: 1rem 0;
     color: #222;
 }
+
+.category .box-contanier .box:hover h3{
+    color: #fff;
+}
+
+.Products .box-contanier .box{
+    position: relative;
+    background: #f3f3f3;
+    text-align: center;
+    overflow: hidden;
+}
+
+.Products .box-contanier .box:hover  .icons{
+    top: 0;
+}
+
+.Products .box-contanier .box .icons{
+    position: absolute;
+    top: -105%;
+    left: 0;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(243, 243, 243, 0.8);
+    gap: 1rem;
+}
+
+.Products .box-contanier .box .icons a{
+    font-size: 2rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    background: #fff;
+    box-shadow: 0 0.5rem 1re, rgba(0, 0, 0, 0.1);
+    color: #222;
+}
+
+.Products .box-contanier .box .icons a:hover{
+    background: var(--brown);
+    color: #fff;
+}
+
+.Products .box-contanier .box .img{
+    height: 15rem;
+    width: 21rem;
+    overflow: hidden;
+}
+
+.Products .box-contanier .box .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Products .box-contanier .box .content{
+    padding: 1.5rem;
+}
+
+.Products .box-contanier .box .content h3{
+    font-size: 2rem;
+    color: #222;
+}
+
+.Products .box-contanier .box .content .price{
+    font-size: 2rem;
+    color: #222;
+    padding: 1rem 0;
+}
+
+.Products .box-contanier .box .content .stars i{
+    font-size: 1.7rem;
+    color: var(--brown);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
